@@ -10,7 +10,9 @@ app.get('/', function(request, response) {
    }); 
 });
 
-app.get('/headers', function(request, response) {    
+app.get('/headers', function(request, response) {    //FIX THIS
+      var headersRequested = request.headers;
+      console.log(typeOf headersRequested);
       response.json(request.headers);
 });
 
