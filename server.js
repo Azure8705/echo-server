@@ -15,7 +15,11 @@ app.get('/headers', function(request, response) {
 });
 
 app.get('/headers/:header_name', function(request, response){
-      
+      response.json(request.headers);
+});
+
+app.get('/version', function(request, response){
+      response.json(request.httpVersion);
 });
 
 app.listen(8080);
