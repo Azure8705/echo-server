@@ -1,0 +1,10 @@
+{
+  "name": "HTTPEchoServer",
+  "version": "0.0.0",
+  "description": "HTTPEchoServer",
+  "main": "server.js",
+  "author": {
+    "name": "AzureSky",
+    "email": ""
+  }
+}
