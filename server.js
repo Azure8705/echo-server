@@ -10,14 +10,15 @@ app.get('/', function(request, response) {
    }); 
 });
 
-app.get('/headers', function(request, response) {    //FIX THIS
-      var headersRequested = request.headers;
-      console.log(typeOf headersRequested);
+app.get('/headers', function(request, response) {    
       response.json(request.headers);
 });
 
 app.get('/headers/:header_name', function(request, response){
-      response.json(request.headers);
+      var headerRep = JSON.stringify(request.headers);
+      response.send(headerRep);
+      
+      console.log(typeof headerRep);
 });
 
 app.get('/version', function(request, response){
