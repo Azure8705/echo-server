@@ -9,4 +9,11 @@ app.get('/', function(request, response) {
    }); 
 });
 
+app.get('/:headers', function(request, response) {
+      
+});
+
+app.get('/:headers/:header_name', function(request, response){
+      
+});
 app.listen(8080);
